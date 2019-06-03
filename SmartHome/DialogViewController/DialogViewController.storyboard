@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hva-vq-6A7">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dialog View Controller-->
+        <scene sceneID="Ra6-oN-ldc">
+            <objects>
+                <viewController id="Hva-vq-6A7" customClass="DialogViewController" customModule="SmartHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DXD-vW-5Et">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="brN-5s-oy6">
+                                <rect key="frame" x="0.0" y="20" width="320" height="496"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="QJ7-5y-ZOh" customClass="DialogMessageCell" customModule="SmartHome" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QJ7-5y-ZOh" id="dlO-et-Gqz">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yV4-CD-w3h">
+                                <rect key="frame" x="0.0" y="516" width="320" height="52"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ввести сообщение" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iXZ-NK-qnU">
+                                        <rect key="frame" x="15" y="0.0" width="235" height="52"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIG-uh-SRZ">
+                                        <rect key="frame" x="270" y="0.0" width="34" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="Fkb-Ho-KVR"/>
+                                        </constraints>
+                                        <state key="normal" title="send"/>
+                                        <connections>
+                                            <action selector="sendMessage:" destination="Hva-vq-6A7" eventType="touchUpInside" id="IsC-Qr-zsJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="AG6-AZ-cIb"/>
+                                    <constraint firstItem="iXZ-NK-qnU" firstAttribute="top" secondItem="yV4-CD-w3h" secondAttribute="top" id="R2J-gZ-fgN"/>
+                                    <constraint firstItem="iXZ-NK-qnU" firstAttribute="leading" secondItem="yV4-CD-w3h" secondAttribute="leading" constant="15" id="SHW-1J-lJn"/>
+                                    <constraint firstAttribute="trailing" secondItem="sIG-uh-SRZ" secondAttribute="trailing" constant="16" id="Uor-hf-CYD"/>
+                                    <constraint firstAttribute="bottom" secondItem="sIG-uh-SRZ" secondAttribute="bottom" id="alF-lZ-9tj"/>
+                                    <constraint firstItem="sIG-uh-SRZ" firstAttribute="top" secondItem="yV4-CD-w3h" secondAttribute="top" id="mWE-2G-3d4"/>
+                                    <constraint firstAttribute="bottom" secondItem="iXZ-NK-qnU" secondAttribute="bottom" id="xzX-nP-lDB"/>
+                                    <constraint firstItem="sIG-uh-SRZ" firstAttribute="leading" secondItem="iXZ-NK-qnU" secondAttribute="trailing" constant="20" id="z4C-a9-sth"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="brN-5s-oy6" firstAttribute="leading" secondItem="vdh-5I-56O" secondAttribute="leading" id="31Q-cX-vAw"/>
+                            <constraint firstItem="yV4-CD-w3h" firstAttribute="top" secondItem="brN-5s-oy6" secondAttribute="bottom" id="JSP-hh-dIc"/>
+                            <constraint firstItem="brN-5s-oy6" firstAttribute="trailing" secondItem="vdh-5I-56O" secondAttribute="trailing" id="bzW-um-9jM"/>
+                            <constraint firstItem="yV4-CD-w3h" firstAttribute="leading" secondItem="vdh-5I-56O" secondAttribute="leading" id="ml9-NQ-bAB"/>
+                            <constraint firstItem="yV4-CD-w3h" firstAttribute="trailing" secondItem="vdh-5I-56O" secondAttribute="trailing" id="n5E-zW-IWr"/>
+                            <constraint firstItem="brN-5s-oy6" firstAttribute="top" secondItem="vdh-5I-56O" secondAttribute="top" id="pDe-aL-dc1"/>
+                            <constraint firstItem="yV4-CD-w3h" firstAttribute="bottom" secondItem="vdh-5I-56O" secondAttribute="bottom" id="vyj-d9-9Ce"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vdh-5I-56O"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageTextField" destination="iXZ-NK-qnU" id="DZQ-DK-7w5"/>
+                        <outlet property="tableView" destination="brN-5s-oy6" id="4LN-Dl-ODI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiM-AS-bsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73.125" y="22.183098591549296"/>
+        </scene>
+    </scenes>
+</document>

@@ -10,10 +10,14 @@
 
 import UIKit
 import Starscream
-
+import UserNotifications
 
 class ViewController: UIViewController, WebSocketDelegate {
 
+    static func storyboardInstance() -> ViewController? {
+        let storyboard = UIStoryboard(name: String(describing: self), bundle: nil)
+        return storyboard.instantiateInitialViewController() as? ViewController
+    }
     var socket: WebSocket?
     var message: CableLayer?
     
@@ -21,6 +25,10 @@ class ViewController: UIViewController, WebSocketDelegate {
         super.viewDidLoad()
         socket = WebSocket(request: self.headers() )
         socket!.delegate = self
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: { didAllow, error in
+            
+        })
     }
     
     @IBAction func connect(_ sender: Any) {
@@ -30,10 +38,12 @@ class ViewController: UIViewController, WebSocketDelegate {
     @IBAction func sendMessage(_ sender: Any) {
         let mes = (message?.send(id: "1", action: "receive", value: "Диалог убийц"))!
         socket!.write(string: mes)
+      
+       
     }
     
     func headers() -> URLRequest {
-        var request = URLRequest(url: URL(string: "ws://localhost:3000/cable")!)
+        var request = URLRequest(url: URL(string: "ws://localhost:3334/cable")!)
         request.setValue("token bmFrYXphbi5ydUBnbWFpbC5jb206dENvcHpvQWNUekpmbjJ0SHd3Vm4=", forHTTPHeaderField: "Authorization")
         request.setValue("nakazan.ru@gmail.com", forHTTPHeaderField: "X-Authorization-Email")
         return request
@@ -52,56 +62,25 @@ class ViewController: UIViewController, WebSocketDelegate {
     
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
         print("websocketDidReceiveMessage", text)
+        let content = UNMutableNotificationContent()
+        content.title = "The 5 seconds are up"
+        content.subtitle = "КУКУ"
+        content.body = text
+        content.sound = UNNotificationSound.default
+        content.badge = 1
+        
+        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest.init(identifier: "timerDone", content: content, trigger: trigger)
+        
+        let center = UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
     func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         print("websocketDidReceiveData", data)
     }
 }
-class CableLayer {
-    
-    let channel: String
-    
-    init(channel: String) {
-        self.channel = channel
-    }    
-    func subscribe(id: String) -> String {
-        
-        let identifier : [String: Any] = [
-            "channel": self.channel,
-            "id": id
-        ]
-        let jsonIdent = identifier.JSONStringify()
-        let messageDictionary : [String: Any] = [
-            "command": "subscribe",
-            "identifier": jsonIdent
-        ]
-        let jsonString = messageDictionary.JSONStringify()
-        
-        return jsonString
-    }
-    func send(id: String, action: String, value: String ) -> String{
-        let mes : [String: Any] = [
-            "channel": self.channel,
-            "id": id
-        ]
-        let jsonMes = mes.JSONStringify()
-        let actionArg : [String: Any] = [
-            "action": action,
-            "value": value
-        ]
-        let jsonActionArg = actionArg.JSONStringify()
-        let mesDict : [String: Any] = [
-            "command": "message",
-            "identifier": jsonMes,
-            "data": jsonActionArg,
-        ]
-        let jsonSender = mesDict.JSONStringify()
-        print ("отправил", jsonSender)
-        
-        return jsonSender
-    }
-}
+
+
 extension Dictionary {
     func JSONStringify() -> String{
         if JSONSerialization.isValidJSONObject(self) {

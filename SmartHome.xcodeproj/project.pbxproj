@@ -7,9 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B91A79122A14EA20082F68A /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91A79022A14EA20082F68A /* DialogViewController.swift */; };
+		4B91A79522A14EDA0082F68A /* DialogViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B91A79422A14EDA0082F68A /* DialogViewController.storyboard */; };
+		4B91A79822A179760082F68A /* DialogMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91A79722A179760082F68A /* DialogMessageCell.swift */; };
+		4B91A79A22A17A010082F68A /* DialogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91A79922A17A010082F68A /* DialogModel.swift */; };
+		4B91A79C22A17E320082F68A /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91A79B22A17E320082F68A /* Extentions.swift */; };
+		4B91A79E22A19DE20082F68A /* MessageSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91A79D22A19DE20082F68A /* MessageSocket.swift */; };
+		4B91A7A222A302A70082F68A /* MessageSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B91A7A122A302A70082F68A /* MessageSupport.swift */; };
+		4BDE7DE2229FE67500F1DDAD /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7DE1229FE67400F1DDAD /* RoomListViewController.swift */; };
+		4BDE7E08229FF18300F1DDAD /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E07229FF18300F1DDAD /* Storage.swift */; };
+		4BDE7E13229FF18A00F1DDAD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E0A229FF18A00F1DDAD /* Result.swift */; };
+		4BDE7E14229FF18A00F1DDAD /* InfoFinance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E0C229FF18A00F1DDAD /* InfoFinance.swift */; };
+		4BDE7E15229FF18A00F1DDAD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E0D229FF18A00F1DDAD /* Login.swift */; };
+		4BDE7E16229FF18A00F1DDAD /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E0E229FF18A00F1DDAD /* Check.swift */; };
+		4BDE7E17229FF18A00F1DDAD /* Incoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E0F229FF18A00F1DDAD /* Incoming.swift */; };
+		4BDE7E18229FF18A00F1DDAD /* MessageId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E10229FF18A00F1DDAD /* MessageId.swift */; };
+		4BDE7E19229FF18A00F1DDAD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E11229FF18A00F1DDAD /* NetworkService.swift */; };
+		4BDE7E1A229FF18A00F1DDAD /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E12229FF18A00F1DDAD /* Routes.swift */; };
+		4BDE7E1C229FF19100F1DDAD /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E1B229FF19000F1DDAD /* DesignableView.swift */; };
+		4BDE7E24229FF19700F1DDAD /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E1E229FF19600F1DDAD /* Switcher.swift */; };
+		4BDE7E25229FF19700F1DDAD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E20229FF19600F1DDAD /* SignUpViewController.swift */; };
+		4BDE7E26229FF19700F1DDAD /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDE7E21229FF19600F1DDAD /* SignUpViewController.storyboard */; };
+		4BDE7E27229FF19700F1DDAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E22229FF19600F1DDAD /* LoginViewController.swift */; };
+		4BDE7E28229FF19700F1DDAD /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BDE7E23229FF19600F1DDAD /* LoginViewController.storyboard */; };
+		4BDE7E2B229FF19E00F1DDAD /* Extention+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7E2A229FF19E00F1DDAD /* Extention+Date.swift */; };
 		4BFB29AB2299F7B900EA04BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB29AA2299F7B900EA04BE /* AppDelegate.swift */; };
 		4BFB29AD2299F7B900EA04BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB29AC2299F7B900EA04BE /* ViewController.swift */; };
-		4BFB29B02299F7B900EA04BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB29AE2299F7B900EA04BE /* Main.storyboard */; };
+		4BFB29B02299F7B900EA04BE /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB29AE2299F7B900EA04BE /* ViewController.storyboard */; };
 		4BFB29B22299F7BC00EA04BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB29B12299F7BC00EA04BE /* Assets.xcassets */; };
 		4BFB29B52299F7BC00EA04BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFB29B32299F7BC00EA04BE /* LaunchScreen.storyboard */; };
 		D929B32C0E735FD48B437A28 /* Pods_SmartHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9763F376F2C66CFEBCD03F0 /* Pods_SmartHome.framework */; };
@@ -17,10 +41,34 @@
 
 /* Begin PBXFileReference section */
 		2386BFD7CB5D3096679E11A2 /* Pods-SmartHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.release.xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.release.xcconfig"; sourceTree = "<group>"; };
+		4B91A79022A14EA20082F68A /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
+		4B91A79422A14EDA0082F68A /* DialogViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DialogViewController.storyboard; sourceTree = "<group>"; };
+		4B91A79722A179760082F68A /* DialogMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogMessageCell.swift; sourceTree = "<group>"; };
+		4B91A79922A17A010082F68A /* DialogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogModel.swift; sourceTree = "<group>"; };
+		4B91A79B22A17E320082F68A /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		4B91A79D22A19DE20082F68A /* MessageSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSocket.swift; sourceTree = "<group>"; };
+		4B91A7A122A302A70082F68A /* MessageSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageSupport.swift; path = ../../RoomListViewController/MessageSupport.swift; sourceTree = "<group>"; };
+		4BDE7DE1229FE67400F1DDAD /* RoomListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
+		4BDE7E07229FF18300F1DDAD /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		4BDE7E0A229FF18A00F1DDAD /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		4BDE7E0C229FF18A00F1DDAD /* InfoFinance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoFinance.swift; sourceTree = "<group>"; };
+		4BDE7E0D229FF18A00F1DDAD /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		4BDE7E0E229FF18A00F1DDAD /* Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
+		4BDE7E0F229FF18A00F1DDAD /* Incoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incoming.swift; sourceTree = "<group>"; };
+		4BDE7E10229FF18A00F1DDAD /* MessageId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageId.swift; sourceTree = "<group>"; };
+		4BDE7E11229FF18A00F1DDAD /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4BDE7E12229FF18A00F1DDAD /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		4BDE7E1B229FF19000F1DDAD /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		4BDE7E1E229FF19600F1DDAD /* Switcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		4BDE7E20229FF19600F1DDAD /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4BDE7E21229FF19600F1DDAD /* SignUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
+		4BDE7E22229FF19600F1DDAD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4BDE7E23229FF19600F1DDAD /* LoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		4BDE7E2A229FF19E00F1DDAD /* Extention+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extention+Date.swift"; sourceTree = "<group>"; };
 		4BFB29A72299F7B900EA04BE /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFB29AA2299F7B900EA04BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BFB29AC2299F7B900EA04BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4BFB29AF2299F7B900EA04BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BFB29AF2299F7B900EA04BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ViewController.storyboard; sourceTree = "<group>"; };
 		4BFB29B12299F7BC00EA04BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BFB29B42299F7BC00EA04BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BFB29B62299F7BC00EA04BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +88,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B91A78F22A14E870082F68A /* DialogViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4B91A79922A17A010082F68A /* DialogModel.swift */,
+				4B91A79722A179760082F68A /* DialogMessageCell.swift */,
+				4B91A79022A14EA20082F68A /* DialogViewController.swift */,
+				4B91A79422A14EDA0082F68A /* DialogViewController.storyboard */,
+				4B91A79D22A19DE20082F68A /* MessageSocket.swift */,
+			);
+			path = DialogViewController;
+			sourceTree = "<group>";
+		};
+		4B91A7A022A302500082F68A /* RoomListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE7DE1229FE67400F1DDAD /* RoomListViewController.swift */,
+			);
+			path = RoomListViewController;
+			sourceTree = "<group>";
+		};
+		4BDE7E09229FF18A00F1DDAD /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE7E0A229FF18A00F1DDAD /* Result.swift */,
+				4BDE7E0B229FF18A00F1DDAD /* Models */,
+				4BDE7E11229FF18A00F1DDAD /* NetworkService.swift */,
+				4BDE7E12229FF18A00F1DDAD /* Routes.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		4BDE7E0B229FF18A00F1DDAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B91A7A122A302A70082F68A /* MessageSupport.swift */,
+				4BDE7E0C229FF18A00F1DDAD /* InfoFinance.swift */,
+				4BDE7E0D229FF18A00F1DDAD /* Login.swift */,
+				4BDE7E0E229FF18A00F1DDAD /* Check.swift */,
+				4BDE7E0F229FF18A00F1DDAD /* Incoming.swift */,
+				4BDE7E10229FF18A00F1DDAD /* MessageId.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BDE7E1D229FF19600F1DDAD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE7E1E229FF19600F1DDAD /* Switcher.swift */,
+				4BDE7E1F229FF19600F1DDAD /* SignUpViewController */,
+				4BDE7E22229FF19600F1DDAD /* LoginViewController.swift */,
+				4BDE7E23229FF19600F1DDAD /* LoginViewController.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		4BDE7E1F229FF19600F1DDAD /* SignUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE7E20229FF19600F1DDAD /* SignUpViewController.swift */,
+				4BDE7E21229FF19600F1DDAD /* SignUpViewController.storyboard */,
+			);
+			path = SignUpViewController;
+			sourceTree = "<group>";
+		};
+		4BDE7E29229FF19E00F1DDAD /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE7E2A229FF19E00F1DDAD /* Extention+Date.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 		4BFB299E2299F7B900EA04BE = {
 			isa = PBXGroup;
 			children = (
@@ -61,9 +181,17 @@
 		4BFB29A92299F7B900EA04BE /* SmartHome */ = {
 			isa = PBXGroup;
 			children = (
+				4B91A79B22A17E320082F68A /* Extentions.swift */,
+				4BDE7E1B229FF19000F1DDAD /* DesignableView.swift */,
+				4B91A78F22A14E870082F68A /* DialogViewController */,
+				4B91A7A022A302500082F68A /* RoomListViewController */,
+				4BDE7E07229FF18300F1DDAD /* Storage.swift */,
 				4BFB29AA2299F7B900EA04BE /* AppDelegate.swift */,
 				4BFB29AC2299F7B900EA04BE /* ViewController.swift */,
-				4BFB29AE2299F7B900EA04BE /* Main.storyboard */,
+				4BDE7E09229FF18A00F1DDAD /* NetworkService */,
+				4BDE7E1D229FF19600F1DDAD /* Auth */,
+				4BDE7E29229FF19E00F1DDAD /* Extention */,
+				4BFB29AE2299F7B900EA04BE /* ViewController.storyboard */,
 				4BFB29B12299F7BC00EA04BE /* Assets.xcassets */,
 				4BFB29B32299F7BC00EA04BE /* LaunchScreen.storyboard */,
 				4BFB29B62299F7BC00EA04BE /* Info.plist */,
@@ -122,6 +250,11 @@
 				TargetAttributes = {
 					4BFB29A62299F7B900EA04BE = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -150,7 +283,10 @@
 			files = (
 				4BFB29B52299F7BC00EA04BE /* LaunchScreen.storyboard in Resources */,
 				4BFB29B22299F7BC00EA04BE /* Assets.xcassets in Resources */,
-				4BFB29B02299F7B900EA04BE /* Main.storyboard in Resources */,
+				4BDE7E28229FF19700F1DDAD /* LoginViewController.storyboard in Resources */,
+				4BFB29B02299F7B900EA04BE /* ViewController.storyboard in Resources */,
+				4BDE7E26229FF19700F1DDAD /* SignUpViewController.storyboard in Resources */,
+				4B91A79522A14EDA0082F68A /* DialogViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,13 +324,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SmartHome/Pods-SmartHome-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -208,20 +348,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDE7E19229FF18A00F1DDAD /* NetworkService.swift in Sources */,
+				4BDE7E1A229FF18A00F1DDAD /* Routes.swift in Sources */,
+				4BDE7E15229FF18A00F1DDAD /* Login.swift in Sources */,
+				4BDE7E1C229FF19100F1DDAD /* DesignableView.swift in Sources */,
+				4BDE7E24229FF19700F1DDAD /* Switcher.swift in Sources */,
+				4BDE7E17229FF18A00F1DDAD /* Incoming.swift in Sources */,
+				4BDE7DE2229FE67500F1DDAD /* RoomListViewController.swift in Sources */,
+				4BDE7E13229FF18A00F1DDAD /* Result.swift in Sources */,
+				4B91A7A222A302A70082F68A /* MessageSupport.swift in Sources */,
+				4BDE7E18229FF18A00F1DDAD /* MessageId.swift in Sources */,
+				4BDE7E25229FF19700F1DDAD /* SignUpViewController.swift in Sources */,
+				4BDE7E14229FF18A00F1DDAD /* InfoFinance.swift in Sources */,
+				4BDE7E16229FF18A00F1DDAD /* Check.swift in Sources */,
+				4BDE7E2B229FF19E00F1DDAD /* Extention+Date.swift in Sources */,
+				4BDE7E27229FF19700F1DDAD /* LoginViewController.swift in Sources */,
+				4B91A79122A14EA20082F68A /* DialogViewController.swift in Sources */,
+				4B91A79A22A17A010082F68A /* DialogModel.swift in Sources */,
+				4BDE7E08229FF18300F1DDAD /* Storage.swift in Sources */,
+				4B91A79E22A19DE20082F68A /* MessageSocket.swift in Sources */,
+				4B91A79822A179760082F68A /* DialogMessageCell.swift in Sources */,
 				4BFB29AD2299F7B900EA04BE /* ViewController.swift in Sources */,
 				4BFB29AB2299F7B900EA04BE /* AppDelegate.swift in Sources */,
+				4B91A79C22A17E320082F68A /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4BFB29AE2299F7B900EA04BE /* Main.storyboard */ = {
+		4BFB29AE2299F7B900EA04BE /* ViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4BFB29AF2299F7B900EA04BE /* Base */,
 			);
-			name = Main.storyboard;
+			name = ViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		4BFB29B32299F7BC00EA04BE /* LaunchScreen.storyboard */ = {
